@@ -1,26 +1,23 @@
-<h1 align="center">LaraGram Citadel</h1>
+## Introduction
 
-<p align="center">API authentication for LaraGram: personal access tokens, SPA sessions and a complete OAuth2 server, with Telegram sign-in built in.</p>
+Citadel is an API authentication for LaraGram - personal access tokens, SPA sessions and a full OAuth2 server with Telegram sign-in.
 
----
+## Official Documentation
 
-Citadel merges Laravel Sanctum and Laravel Passport into one package with **one guard** (`auth:citadel`) and **one trait** (`HasApiTokens`):
+Documentation for Citadel can be found on the [LaraGram website](https://laraxgram.github.io/v4/citadel).
 
-| Feature | What it does |
-| --- | --- |
-| **Personal access tokens** | `$user->createToken('cli', ['orders:read'])`, abilities, expiry, last-used tracking. |
-| **SPA & Mini App sessions** | First-party SPAs use the session; Luna Telegram Mini Apps use Luna's `telegram` guard, with no tokens at all. |
-| **OAuth2 server** | Authorization code + PKCE, client credentials, refresh token rotation, device flow (RFC 8628), revocation (RFC 7009) and server metadata (RFC 8414), on a native engine with no third-party dependencies. |
-| **Telegram grants** | Exchange Mini App init data or Login Widget data for OAuth tokens. |
-| **Bot approvals** | Users approve devices (CLIs, MCP clients) and issue tokens right in the bot. |
+## Contributing
 
-```bash
-composer require laraxgram/citadel
-php laragram citadel:install
-```
+Thank you for considering contributing to Citadel. The contribution guide can be found in the [LaraGram documentation](https://laraxgram.github.io/contributions.html).
 
-Read the full documentation at [laraxgram.github.io](https://laraxgram.github.io/v4/citadel).
+## Code of Conduct
+
+In order to ensure that the LaraGram community is welcoming to all, please review and abide by the [Code of Conduct](https://laraxgram.github.io/contributions.html#code-of-conduct).
+
+## Security Vulnerabilities
+
+For information on reporting security vulnerabilities, please review our [security policy](https://github.com/laraxgram/citadel/security/policy)
 
 ## License
 
-LaraGram Citadel is open-sourced software licensed under the [MIT license](LICENSE.md). It is based on Laravel Sanctum and Laravel Passport by Taylor Otwell.
+Citadel is open-sourced software licensed under the [MIT license](LICENSE.md).
